@@ -4,10 +4,6 @@ http://www.vim.org/download.php
 Download GIT (allow call from cmd)
 http://git-scm.com/downloads
 
-Install VUNDLE in the vimfiles/bundle folder (simply clone repository):
-https://github.com/gmarik/Vundle.vim
-git clone https://github.com/gmarik/Vundle.vim.git %userprofile%/vimfiles/bundle/Vundle.vim
-
 Copy curl to C:\Program Files\Git\cmd\
 
 ----------------------------------------------------------------------------------
@@ -25,4 +21,12 @@ Installation:
 Create symlinks:
 	ln -s ~/vimfiles/vimrc ~/.vimrc
 	ln -s ~/vimfiles/gvimrc ~/.gvimrc
+
+----------------------------------------------------------------------------------
+
+Install VUNDLE in the vimfiles/bundle folder (simply clone repository):
+https://github.com/gmarik/Vundle.vim
+git clone https://github.com/gmarik/Vundle.vim.git %userprofile%/vimfiles/bundle/Vundle.vim
+
+Open vim and type: :PluginInstall or :PluginUpdate
 
