@@ -26,7 +26,14 @@ Create symlinks:
 
 Install VUNDLE in the vimfiles/bundle folder (simply clone repository):
 https://github.com/gmarik/Vundle.vim
+
+WINDOWS
 git clone https://github.com/gmarik/Vundle.vim.git %userprofile%/vimfiles/bundle/Vundle.vim
+
+UNIX
+git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
+
+----------------------------------------------------------------------------------
 
 Open vim and type: :PluginInstall or :PluginUpdate
 

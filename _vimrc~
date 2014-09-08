@@ -124,7 +124,7 @@ if has("win32") || has("win16")
 	source $USERPROFILE/vimfiles/user.vim
 	  
 else
-"	source ~/vimfiles/colors/gruvbox.vim
+	source ~/vimfiles/colors/gruvbox.vim
         source ~/vimfiles/user.vim
 endif
 
