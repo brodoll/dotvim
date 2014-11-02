@@ -90,14 +90,14 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'yegappan/mru'
-Plugin 'vim-scripts/FuzzyFinder'
+"Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/L9'
-Plugin 'chriskempson/base16-vim'
-
-
+Plugin 'Lokaltog/powerline'
+"Plugin 'kien/ctrlp'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,13 +119,28 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 "just configuration for such hostile environment as Windows {{{
 if has("win32") || has("win16")
-	source $USERPROFILE/vimfiles/colors/gruvbox.vim
+	" source $USERPROFILE/vimfiles/colors/gruvbox.vim
 	" isource $VIMRUNTIME/colors/peachpuff.vim
+        source $USERPROFILE/vimfiles/colors/solarized.vim
 	source $USERPROFILE/vimfiles/user.vim
-	  
+	set background=dark	  
 else
 "	source ~/vimfiles/colors/gruvbox.vim
         source ~/vimfiles/user.vim
+endif
+
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window (for an alternative on Windows, see simalt below).
+  set lines=999 columns=999
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
 endif
 
 " fix color scheme on terminal
