@@ -25,23 +25,18 @@ Windows
 2. Download GIT (allow call from cmd) from: 'gitd'_.
 
 3. Copy curl to: 
-.. code-block::shell
 	C:\Program Files\Git\cmd\
 
 4. Copy repository:
-.. code-block::shell
 	git clone git://github.com/brodroll/dotvim.git %userprofile%\vimfiles
 
 5. Create symlinks:
-.. code-block::shell
 	mklink %userprofile%\_vimrc %userprofile%\vimfiles\_vimrc
 
 6. Install vundle:
-.. code-block::shell
 	git clone https://github.com/gmarik/Vundle.vim.git %userprofile%/vimfiles/bundle/Vundle.vim
 
 7. Update plugins:
-.. code-block::viml
 	:PluginInstall
 	:PluginUpdate
 
@@ -50,22 +45,21 @@ Linux
 -----
 
 1. Download GIT:
-.. code-block::bash
+.. code-block:bash
 	$ apt-get install git
 
 2. Clone vimfiles repository:
 	git clone git://github.com/brodroll/dotvim.git ~/vimfiles
 
 3. Create symlinks:
-.. code-block::bash
-	$ln -s ~/vimfiles/vimrc ~/.vimrc
-	$ln -s ~/vimfiles/gvimrc ~/.gvimrc
+.. code-block:bash
+	ln -s ~/vimfiles/vimrc ~/.vimrc
+	ln -s ~/vimfiles/gvimrc ~/.gvimrc
 
 4. Install Vundle:
 	git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
 
 5. Updalte plugins:
-.. code-block::viml
 	:PluginInstall
 	:PluginUpdate
 
