@@ -96,7 +96,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline'
 "Plugin 'kien/ctrlp'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
