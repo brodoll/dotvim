@@ -84,12 +84,26 @@ Linux
 
 	git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
 
-5. Updalte plugins:
+5. Update plugins:
 
 .. code-block:: vim
 
 	:PluginInstall
 	:PluginUpdate
+
+---------------
+Troubleshooting
+---------------
+
+* GVim Warnings
+
+Add to .bashrc file:
+
+.. code-block:: bash
+
+        alias gvim="gvim 2>/dev/null"
+
+
 
 .. _[1]: http://www.vim.org/download.php
 .. _[2]: http://git-scm.com/downloads

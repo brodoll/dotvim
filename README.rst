@@ -91,5 +91,20 @@ Linux
 	:PluginInstall
 	:PluginUpdate
 
+---------------
+Troubleshooting
+---------------
+
+GVim Warning
+~~~~~~~~~~~~
+
+To ignore the shell warnings, add to .bashrc file:
+
+.. code-block:: bash
+
+        alias gvim="gvim 2>/dev/null"
+
+
+
 .. _[1]: http://www.vim.org/download.php
 .. _[2]: http://git-scm.com/downloads
