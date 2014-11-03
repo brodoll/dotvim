@@ -97,7 +97,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline'
 "Plugin 'kien/ctrlp'
 "Plugin 'Valloric/YouCompleteMe'
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -121,20 +121,26 @@ behave mswin
 if has("win32") || has("win16")
 	" source $USERPROFILE/vimfiles/colors/gruvbox.vim
 	" isource $VIMRUNTIME/colors/peachpuff.vim
-        source $USERPROFILE/vimfiles/colors/solarized.vim
-	source $USERPROFILE/vimfiles/user.vim
-	set background=dark	  
+        set background=dark
+	source $USERPROFILE/vimfiles/colors/solarized.vim
+	source $USERPROFILE/vimfiles/user.vim 
 else
-"	source ~/vimfiles/colors/gruvbox.vim
-        source ~/vimfiles/user.vim
+        source ~/vimfiles/user.vim	
 endif
 
 if has("gui_running")
   " GUI is running or is about to start.
   " Maximize gvim window (for an alternative on Windows, see simalt below).
   set lines=999 columns=999
+  set background=dark
+  source ~/vimfiles/colors/solarized.vim
 else
   " This is console Vim.
+  set background=dark
+  let g:solarized_termcolors=256
+  source ~/vimfiles/colors/solarized.vim
+  " fix color scheme on terminal
+  set t_Co=256
   if exists("+lines")
     set lines=50
   endif
@@ -143,5 +149,3 @@ else
   endif
 endif
 
-" fix color scheme on terminal
-set t_Co=256
