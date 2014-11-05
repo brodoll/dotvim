@@ -17,6 +17,9 @@ set ruler
 " line numbering
 set nu
 
+"making utf-8 default
+set enc=utf-8
+
 function! SetupLatex(arg)
     if a:arg == 'pdf'
         let a:targetformat = 'pdf'

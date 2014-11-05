@@ -71,9 +71,6 @@ if exists("myTeXtarget")
     let g:Tex_FoldedEnvironments = 'frame,verbatim,comment,eq,gather,align,figure,table,thebibliography,keywords,abstract,titlepage'
 endif
  
-" font
-set guifont=DejaVu\ Sans\ Mono\ 8
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/vimfiles/bundle/Vundle.vim/
 let path='~/vimfiles/bundle'
@@ -124,7 +121,12 @@ if has("win32") || has("win16")
         set background=dark
 	source $USERPROFILE/vimfiles/colors/solarized.vim
 	source $USERPROFILE/vimfiles/user.vim 
+
+	" font
+	set guifont=DejaVu\ Sans\ Mono\ 8
 else
+	" font
+	set guifont=DejaVu\ Sans\ Mono\ 12
         source ~/vimfiles/user.vim	
 endif
 
