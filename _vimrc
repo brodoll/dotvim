@@ -1,3 +1,14 @@
+" Key Mappings
+:noremap <Up> gk
+:noremap! <Up> <C-O>gk
+:noremap <Down> gj
+:noremap! <Down> <C-O>gj
+" the following are optional, to move by file lines using Alt-arrows
+:noremap! <M-Up> <Up>
+:noremap! <M-Down> <Down>
+:noremap <M-Up> k
+:noremap <M-Down> j
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -15,7 +26,7 @@ set shortmess+=I
 set ruler
  
 " line numbering
-set nu
+set rnu
 
 "making utf-8 default
 set enc=utf-8
@@ -98,8 +109,13 @@ Plugin 'Lokaltog/powerline'
 "Plugin 'kien/ctrlp'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-scripts/octave.vim'
+
+" Latexmk setup
+"let g:LatexBox_latexmk_options = '-c -pdf'
+
+au BufRead,BufNewFile *.md set filetype=markdown
+"autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,3 +172,4 @@ else
   endif
 endif
 
+autocmd FileType matlab map <buffer> <f5> maggOpkg load all<esc>Gopause<esc>:w<cr>:!octave -qf %<cr>ddggdd:w<cr>

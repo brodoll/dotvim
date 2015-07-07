@@ -15,7 +15,7 @@ set shortmess+=I
 set ruler
  
 " line numbering
-set rnu
+set nu
 
 "making utf-8 default
 set enc=utf-8
@@ -98,13 +98,9 @@ Plugin 'Lokaltog/powerline'
 "Plugin 'kien/ctrlp'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/octave.vim'
 
-" Latexmk setup
-"let g:LatexBox_latexmk_options = '-c -pdf'
-
+" Changing modula file termination to markdown
 au BufRead,BufNewFile *.md set filetype=markdown
-"autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -161,4 +157,10 @@ else
   endif
 endif
 
-autocmd FileType matlab map <buffer> <f5> maggOpkg load all<esc>Gopause<esc>:w<cr>:!octave -qf %<cr>ddggdd:w<cr>
+" Remapping
+
+"Insert newline without entering insert mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+ 
