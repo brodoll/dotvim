@@ -3,6 +3,7 @@
 :noremap! <Up> <C-O>gk
 :noremap <Down> gj
 :noremap! <Down> <C-O>gj
+
 " the following are optional, to move by file lines using Alt-arrows
 :noremap! <M-Up> <Up>
 :noremap! <M-Down> <Down>
@@ -101,13 +102,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'yegappan/mru'
-"Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline'
-"Plugin 'kien/ctrlp'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/octave.vim'
 
@@ -173,3 +171,8 @@ else
 endif
 
 autocmd FileType matlab map <buffer> <f5> maggOpkg load all<esc>Gopause<esc>:w<cr>:!octave -qf %<cr>ddggdd:w<cr>
+
+" Nerdtree toggle on/off on F3
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+

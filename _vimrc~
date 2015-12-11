@@ -1,3 +1,14 @@
+" Key Mappings
+:noremap <Up> gk
+:noremap! <Up> <C-O>gk
+:noremap <Down> gj
+:noremap! <Down> <C-O>gj
+" the following are optional, to move by file lines using Alt-arrows
+:noremap! <M-Up> <Up>
+:noremap! <M-Down> <Down>
+:noremap <M-Up> k
+:noremap <M-Down> j
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -162,3 +173,8 @@ else
 endif
 
 autocmd FileType matlab map <buffer> <f5> maggOpkg load all<esc>Gopause<esc>:w<cr>:!octave -qf %<cr>ddggdd:w<cr>
+
+" Nerdtree toggle on/off on F3
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+
