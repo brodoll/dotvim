@@ -11,10 +11,10 @@
 :noremap <M-Down> j
 
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off                  " requiredTM4C123
 
 " Vim tries the paths from left to right. This line tells Vim 
-" to try the current directory, else try /path/vim/can/write/to
+" to try the currentTM4C123 directory, else try /path/vim/can/write/to
 set directory=.,$TEMP
 
 " show me where i am
@@ -132,7 +132,7 @@ filetype plugin indent on    " required
 
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
-behave mswin
+"behave mswin
 "just configuration for such hostile environment as Windows {{{
 if has("win32") || has("win16")
 	" source $USERPROFILE/vimfiles/colors/gruvbox.vim
