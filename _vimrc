@@ -12,6 +12,8 @@
 
 set nocompatible              " be iMproved, required
 filetype off                  " requiredTM4C123
+filetype plugin on
+syntax on
 
 " Vim tries the paths from left to right. This line tells Vim 
 " to try the currentTM4C123 directory, else try /path/vim/can/write/to
@@ -105,9 +107,12 @@ Plugin 'yegappan/mru'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/powerline'
+"Plugin 'Lokaltog/powerline'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/octave.vim'
+Plugin 'vimwiki/vimwiki'
+Plugin 'itchyny/lightline.vim'
+Plugin 'jceb/vim-orgmode'
 
 " Latexmk setup
 "let g:LatexBox_latexmk_options = '-c -pdf'
