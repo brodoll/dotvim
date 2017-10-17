@@ -113,6 +113,7 @@ Plugin 'vim-scripts/octave.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jceb/vim-orgmode'
+Plugin 'junegunn/goyo.vim'
 
 " Latexmk setup
 "let g:LatexBox_latexmk_options = '-c -pdf'

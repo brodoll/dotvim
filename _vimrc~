@@ -112,6 +112,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/octave.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/lightline.vim'
+Plugin 'jceb/vim-orgmode'
 
 " Latexmk setup
 "let g:LatexBox_latexmk_options = '-c -pdf'
